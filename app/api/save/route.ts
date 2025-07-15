@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
-import { supabase } from "@/lib/supabase"; // double-check your path starts from root with alias
-import { connectMongo } from "@/lib/mongodb"; // ditto here
+// ✅ Correct relative paths
+import { supabase } from "../../../lib/supabase";
+import { connectMongo } from "../../../lib/mongodb";
+
 import mongoose from "mongoose";
 
 // Schema definition
